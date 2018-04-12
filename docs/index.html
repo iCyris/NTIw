@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>NTIw</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Erik Terwan">
+
+	<link href="style.css" rel="stylesheet">
+	<link href="demo.css" rel="stylesheet">
+</head>
+<body>
+<div class="block">
+	<h1 data-scroll="toggle(.scaleUpIn, .scaleUpOut)">NTIw</h1>
+	<h2 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">一个静态的小礼物<br/><br/>For Acaleph</h2>
+
+	<svg viewBox="0 0 60 60">
+		<path d="M52.254 18.327c0.816-0.804 2.127-0.804 2.937 0s0.813 2.103 0 2.907l-23.724 23.49c-0.81 0.804-2.121 0.804-2.937 0l-23.724-23.49c-0.81-0.804-0.81-2.103 0-2.907 0.813-0.804 2.127-0.804 2.937 0l22.257 21.423 22.254-21.423z"></path>
+	</svg>
+</div>
+<div class="block">
+	<h1 data-scroll="toggle(.fromTopIn, .fromTopOut)">Darling</h1>
+	<h2 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">今天是我们在一起的第 520 天<br/>你总说我藏不住礼物<br/>这一次...藏住了 QUQ<br/>让我们看看下面有什么吧！</h2>
+</div>
+<div class="block">
+	<h1 data-scroll="toggle(.fromLeftIn, .fromLeftOut)">一只猫 🐱</h1>
+	<h2 data-scroll="toggle(.fromRightIn, .fromRightOut)">来逗它玩吧！<br/>不用担心被挠哦<br/><br/><a href="https://cyris.cn/cat">喵～</a></h2>
+</div>
+<div class="block">
+	<h1 data-scroll="toggle(.scaleDownIn, .scaleDownOut)">胡萝卜🥕</h1>
+	<h2 data-scroll="toggle(.fromBottomIn, .fromBottomOut)">“请问你有胡萝吗？”<br/><br/>为你准备了一个小游戏<br/>准备好让风扇起飞了吗？<br/><br/><a href="https://cyris.cn/carrot">Gogogo！</a></h2>
+</div>
+<div class="block">
+	<h1 data-scroll="toggle(.fromRightIn, .fromRightOut)">彩蛋 🐥</h1>
+	<h2 data-scroll="toggle(.fromLeftIn, .fromLeftOut)">在这份礼物里<br/>你是否想起了一些故事<br/>又找到了多少颗彩蛋呀</h2>
+</div>
+<div class="block">
+	<h1 data-scroll="toggle(.fromRightIn, .fromRightOut)">Jungle</h1>
+	<h2 data-scroll="toggle(.fromLeftIn, .fromLeftOut)">仍在开发中的大礼物<br/><br/>🎁</h2>
+</div>
+<div class="block">
+	<h1 data-scroll="toggle(.fromRightIn, .fromRightOut) once">一幅画</h1>
+	<h2 data-scroll="toggle(.fromLeftIn, .fromLeftOut) once">「对方看见自己藏不住微笑的那一刻。」</h2>
+</div>
+<div class="block">
+	<h1></h1>
+	<h2>"The only true voyage of discovery, the only fountain of Eternal Youth, would be not to visit strange lands but to possess other eyes, to behold the universe through the eyes of another, of a hundred others, to behold the hundred universes that each of them beholds, that each of them is."<br/> -- Marcel Proust</h2>
+	<h2>Enjoy it.</h2>
+	<br/><br/>
+	<h3>Cyris © 2018</h3>
+</div>
+
+<script src="../ScrollTrigger.min.js"></script>
+<script>
+window.counter = function() {
+	// this refers to the html element with the data-scroll-showCallback tag
+	var span = this.querySelector('span');
+	var current = parseInt(span.textContent);
+
+	span.textContent = current + 1;
+};
+
+document.addEventListener('DOMContentLoaded', function(){
+  var trigger = new ScrollTrigger({
+	  addHeight: true
+  });
+});
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,500,700" rel="stylesheet">
+</body>
+</html>
